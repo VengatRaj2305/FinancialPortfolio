@@ -1,0 +1,18 @@
+.dashboard {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 100vh;
+  border: 2px solid lightgray;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0 auto; /* center on larger screens */
+}
+
+/* Optional: Adjust styling on smaller devices */
+@media (max-width: 600px) {
+  .dashboard {
+    max-width: 90%; /* shrink max-width on small screens */
+    padding: 0.5rem;
+  }
+}
