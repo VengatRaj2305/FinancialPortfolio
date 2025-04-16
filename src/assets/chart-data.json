@@ -1,0 +1,13 @@
+{
+  "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+  "datasets": [
+    {
+      "data": [75, 49, 60, 80, 56, 85, 30],
+      "label": "Portfolio Value",
+      "fill": true,
+      "tension": 0.5,
+      "borderColor": "rgba(54, 162, 235, 1)",
+      "backgroundColor": "rgba(54, 162, 235, 0.2)"
+    }
+  ]
+}

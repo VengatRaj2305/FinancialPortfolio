@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import {  BaseChartDirective } from 'ng2-charts';
 import { ChartConfiguration ,ChartType} from 'chart.js';
+import { AppService } from '../app.service';
 
 
 @Component({
@@ -32,11 +33,18 @@ export class DashboardComponent implements OnInit{
   };
 
 
-  constructor() {
+  constructor(private appService:AppService) {
 
   }
 
   ngOnInit() {
-
+    this.appService.getChartData().subscribe({
+      next: (data: ChartConfiguration<'line'>['data']) => {
+        this.lineChartData = data;
+      },
+      error: (err) => {
+        console.error('Failed to load chart data:', err);
+      }
+    });
   }
 }
