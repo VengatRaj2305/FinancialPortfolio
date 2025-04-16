@@ -36,23 +36,4 @@
 .header a:hover {
   color: #c5cae9; /* lighter indigo */
 }
-@media (max-width: 600px) {
-  .header ul {
-    flex-direction: column;
-    background: #3f51b5;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    right: 0;
-    display: none;
-  }
 
-  .header.active ul {
-    display: flex;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
